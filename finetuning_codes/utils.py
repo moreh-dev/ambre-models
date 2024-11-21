@@ -178,7 +178,7 @@ def load_custom_dataset(args):
     elif args.dataset_name_or_path == "alespalla/chatbot_instruction_prompts":
         dataset = load_dataset(args.dataset_name_or_path).with_format("torch")
         dataset["train"] = load_dataset(args.dataset_name_or_path,
-                                        split="train[:5%]").with_format("torch")
+                                        split="train[:90%]").with_format("torch")
         dataset["validation"] = load_dataset(
             args.dataset_name_or_path,
             split="train[90%:95%]").with_format("torch")
