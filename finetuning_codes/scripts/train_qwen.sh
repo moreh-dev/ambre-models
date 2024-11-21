@@ -10,7 +10,7 @@ TRANSFORMERS_VERBOSITY=info accelerate launch \
     --dataset alespalla/chatbot_instruction_prompts \
     --lr 0.0001 \
     --train-batch-size 128 \
-    --eval-batch-size 8 \
+    --eval-batch-size 16 \
     --num-epochs 5 \
     --max-steps 20 \
     --log-interval 20 \
